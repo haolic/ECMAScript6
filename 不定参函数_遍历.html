@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>不定参函数遍历</title>
+    <script>
+        let test = (...arg) => {
+            let sum = 0;
+            for (let i in arg) {
+                sum = sum + arg[i];
+            }
+            return sum;
+        }
+        console.log(test(1,2,3,4,5));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
