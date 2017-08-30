@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>不定参函数</title>
+    <script>
+        let str = "abc123";
+        console.log(str.length);
+        let test = (a, b, c, d, e, f) => {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+            console.log(d);
+            console.log(e);
+            console.log(f);
+        }
+        test(...str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
