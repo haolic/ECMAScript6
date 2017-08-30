@@ -12,6 +12,17 @@
 				console.log("Actions speak louder than words!")
 			}
 		}
+		let student = {
+			__proto__:person,
+			sno: "1001",
+			sdept: "计算机",
+			study(){
+				console.log("When you fall down, you just gotta get back up and keep on going, there is no sense in just sitting in.")
+			}
+		}
+		console.log(student.sno);
+		console.log(student.name);
+		student.say();
 	</script>
 </head>
 <body>

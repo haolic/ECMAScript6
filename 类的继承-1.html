@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        class Person{
+            constructor(name, age, sex){
+                this.name = name;
+                this.age = age;
+                this.sex = sex;
+            }
+            say(){
+                alert('我在说话');
+            }
+        }
+        class Student extends Person{
+            constructor(sno, dep, name, sex, age){
+                super(name, age, sex);
+                this.sno = sno;
+                this.dep = dep;
+            }
+            study(){
+                alert('学习');
+            }
+        }
+        //实例化一个Student类.
+        let zs = new Student(100001, '工程造价', "张三", "男", 19);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
