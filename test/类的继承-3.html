@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        class Person {
+            constructor(name, age, sex) {
+                this.name = name;
+                this.age = age;
+                this.sex = sex;
+            }
+            say () {
+                alert('说话');
+            }
+        }
+        class Students extends Person{
+            constructor(name, age, sex, sdept, snum) {
+                super(name, age, sex);
+                this.sdept = sdept;
+                this.snum = snum;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

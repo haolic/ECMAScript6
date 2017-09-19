@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let person = {
+            name: 'tom',
+            age: '19',
+            sex: '男',
+            say() {
+                alert('说话');
+            }
+        }
+        let student = {
+            __proto__: person,
+            sdept: '计算机',
+            snum: 10001
+        }
+        alert(student.sdept);
+        alert(student.name);
+        student.say();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
