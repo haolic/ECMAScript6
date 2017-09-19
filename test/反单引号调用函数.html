@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        let num = 12345;
-        let str = `我是模板字符串\n${num}`;
-        console.log(String.raw`我是模板字符串\n${num}`);
+        let num = 3;
+        let num2 = 4;
+        let tag = (v1, ...a) => {
+            console.log(v1);
+            console.log(...a);
+            
+        };
+        tag`haha${num + num2}heihei${num * num2}`;
     </script>
 </head>
 <body>
