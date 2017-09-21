@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function async1() {
+            let p = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    console.log('执行完成1');
+                    resolve('哈哈1');
+                }, 1000)
+            });
+            return p;
+        }
+        function async2() {
+            let p = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    console.log('执行完成2');
+                    resolve('哈哈2');
+                }, 2000)
+            });
+            return p;
+        }
+        function async3() {
+            let p = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    console.log('执行完成3');
+                    reject('reject');
+                    resolve('哈哈3');
+                }, 2000)
+            });
+            return p;
+        }
+        Promise.race([async1(), async2(), async3()]).then(function(value) {
+            console.log('1执行完了');
+            console.log(value);
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
